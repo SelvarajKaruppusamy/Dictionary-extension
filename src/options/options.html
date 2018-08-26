@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dictionary Popup Options</title>
+        <link rel="stylesheet" href="./options.css">
+    </head>
+    <body>
+        <div id="dictionary-settings" class="dictionary-settings-holder">
+            <div class="dictionary-source-select-holder" id="dictionary-source-radio">
+                <p class="dictionary-select-title"> Select dictionary source </p>
+                <div class="dictionary-select-options">
+                    <div class="dictionary-source-radio-select">
+                        <input type="radio" name="dictionarySource"
+                        value="wordnik" id="dictionary-option-wordnik">
+                        <label for="dictionary-option-wordnik"> Wordnik </label>
+                    </div>
+                    <div class="dictionary-source-radio-select">
+                        <input type="radio" name="dictionarySource"
+                        value="custom" id="dictionary-custom-option">
+                        <label for="dictionary-custom-option"> Set Custom URL</label>
+                    </div>
+                    <input type="text" name="dictionaryCustomUrl"
+                        class="dictionary-source-textbox hidden" id="dictionary-custom-url">
+                </div>
+            </div>
+            <button type="button" class="save-btn"
+                id="dictionary-settings-save-btn">Save</button>
+        </div>
+        <script src="../dependencies/jquery-3.2.1.min.js"></script>
+        <script src="./options.js"></script>
+    </body>
+</html>
